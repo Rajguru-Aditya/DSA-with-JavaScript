@@ -6,18 +6,6 @@ const minNmax = (arr) => {
   for (let i = 1; i < arr.length; i++) {
     for (let j = 0; j < i; j++)
       if (arr[i] < arr[j]) {
-        console.log(
-          "Index i:",
-          i,
-          "Index j:",
-          j,
-          "value arr[i]:",
-          arr[i],
-          "value arr[j]:",
-          arr[j],
-          "\nvalue of arr:",
-          arr
-        );
         let x = arr[i];
         arr[i] = arr[j];
         arr[j] = x;
